@@ -72,6 +72,7 @@ Partial Class AdminScreen
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.UsersBindingSrc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -473,11 +474,21 @@ Partial Class AdminScreen
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(1203, 655)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(478, 176)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'AdminScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(2884, 1487)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnUpdate)
@@ -542,4 +553,5 @@ Partial Class AdminScreen
     Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
