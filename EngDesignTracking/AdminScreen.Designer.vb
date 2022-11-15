@@ -71,6 +71,7 @@ Partial Class AdminScreen
         Me.GridColumn12 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.UsersBindingSrc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersDataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,12 +128,12 @@ Partial Class AdminScreen
         'GridControl1
         '
         Me.GridControl1.DataSource = Me.UsersBindingSrc
-        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(2)
-        Me.GridControl1.Location = New System.Drawing.Point(1, 8)
+        Me.GridControl1.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GridControl1.Location = New System.Drawing.Point(2, 15)
         Me.GridControl1.MainView = Me.GridView1
-        Me.GridControl1.Margin = New System.Windows.Forms.Padding(2)
+        Me.GridControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GridControl1.Name = "GridControl1"
-        Me.GridControl1.Size = New System.Drawing.Size(1573, 754)
+        Me.GridControl1.Size = New System.Drawing.Size(3146, 1450)
         Me.GridControl1.TabIndex = 0
         Me.GridControl1.UseEmbeddedNavigator = True
         Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
@@ -140,296 +141,349 @@ Partial Class AdminScreen
         'GridView1
         '
         Me.GridView1.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colRecordID, Me.colUsername, Me.colGridEdit, Me.colEngineer, Me.colDrafter, Me.colSrEngineer, Me.colReleaser, Me.colFlammability, Me.colStress, Me.colID, Me.colLocation, Me.colAdmin, Me.colCM, Me.colProjectSync, Me.colJaguarOnly, Me.colLegacyForm, Me.colNewForm, Me.colMDL, Me.colMDLUnlock, Me.colNewRecord, Me.colLeadEngineer, Me.GridColumn1, Me.colLiaisonEngineer, Me.colOperations, Me.GridColumn2, Me.GridColumn3, Me.GridColumn4, Me.GridColumn5, Me.GridColumn6, Me.GridColumn7, Me.GridColumn8, Me.GridColumn9, Me.GridColumn10, Me.GridColumn11, Me.GridColumn12})
-        Me.GridView1.DetailHeight = 227
-        Me.GridView1.FixedLineWidth = 1
+        Me.GridView1.DetailHeight = 437
         Me.GridView1.GridControl = Me.GridControl1
         Me.GridView1.Name = "GridView1"
         '
         'colRecordID
         '
         Me.colRecordID.FieldName = "RecordID"
+        Me.colRecordID.MinWidth = 40
         Me.colRecordID.Name = "colRecordID"
+        Me.colRecordID.Width = 150
         '
         'colUsername
         '
         Me.colUsername.FieldName = "Username"
+        Me.colUsername.MinWidth = 40
         Me.colUsername.Name = "colUsername"
         Me.colUsername.Visible = True
         Me.colUsername.VisibleIndex = 0
-        Me.colUsername.Width = 64
+        Me.colUsername.Width = 128
         '
         'colGridEdit
         '
         Me.colGridEdit.FieldName = "GridEdit"
+        Me.colGridEdit.MinWidth = 40
         Me.colGridEdit.Name = "colGridEdit"
+        Me.colGridEdit.Width = 150
         '
         'colEngineer
         '
         Me.colEngineer.FieldName = "Engineer"
+        Me.colEngineer.MinWidth = 40
         Me.colEngineer.Name = "colEngineer"
+        Me.colEngineer.Width = 150
         '
         'colDrafter
         '
         Me.colDrafter.FieldName = "Drafter"
+        Me.colDrafter.MinWidth = 40
         Me.colDrafter.Name = "colDrafter"
+        Me.colDrafter.Width = 150
         '
         'colSrEngineer
         '
         Me.colSrEngineer.FieldName = "SrEngineer"
+        Me.colSrEngineer.MinWidth = 40
         Me.colSrEngineer.Name = "colSrEngineer"
+        Me.colSrEngineer.Width = 150
         '
         'colReleaser
         '
         Me.colReleaser.FieldName = "Releaser"
+        Me.colReleaser.MinWidth = 40
         Me.colReleaser.Name = "colReleaser"
+        Me.colReleaser.Width = 150
         '
         'colFlammability
         '
         Me.colFlammability.FieldName = "Flammability"
+        Me.colFlammability.MinWidth = 40
         Me.colFlammability.Name = "colFlammability"
+        Me.colFlammability.Width = 150
         '
         'colStress
         '
         Me.colStress.FieldName = "Stress"
+        Me.colStress.MinWidth = 40
         Me.colStress.Name = "colStress"
+        Me.colStress.Width = 150
         '
         'colID
         '
         Me.colID.FieldName = "ID"
+        Me.colID.MinWidth = 40
         Me.colID.Name = "colID"
         Me.colID.Visible = True
         Me.colID.VisibleIndex = 1
-        Me.colID.Width = 49
+        Me.colID.Width = 98
         '
         'colLocation
         '
         Me.colLocation.FieldName = "Location"
+        Me.colLocation.MinWidth = 40
         Me.colLocation.Name = "colLocation"
         Me.colLocation.Visible = True
         Me.colLocation.VisibleIndex = 2
-        Me.colLocation.Width = 49
+        Me.colLocation.Width = 98
         '
         'colAdmin
         '
         Me.colAdmin.FieldName = "Admin"
+        Me.colAdmin.MinWidth = 40
         Me.colAdmin.Name = "colAdmin"
         Me.colAdmin.Visible = True
         Me.colAdmin.VisibleIndex = 3
-        Me.colAdmin.Width = 48
+        Me.colAdmin.Width = 96
         '
         'colCM
         '
         Me.colCM.FieldName = "CM"
+        Me.colCM.MinWidth = 40
         Me.colCM.Name = "colCM"
         Me.colCM.Visible = True
         Me.colCM.VisibleIndex = 4
-        Me.colCM.Width = 27
+        Me.colCM.Width = 54
         '
         'colProjectSync
         '
         Me.colProjectSync.FieldName = "ProjectSync"
+        Me.colProjectSync.MinWidth = 40
         Me.colProjectSync.Name = "colProjectSync"
         Me.colProjectSync.Visible = True
         Me.colProjectSync.VisibleIndex = 12
-        Me.colProjectSync.Width = 68
+        Me.colProjectSync.Width = 136
         '
         'colJaguarOnly
         '
         Me.colJaguarOnly.FieldName = "JaguarOnly"
+        Me.colJaguarOnly.MinWidth = 40
         Me.colJaguarOnly.Name = "colJaguarOnly"
         Me.colJaguarOnly.Visible = True
         Me.colJaguarOnly.VisibleIndex = 13
-        Me.colJaguarOnly.Width = 69
+        Me.colJaguarOnly.Width = 138
         '
         'colLegacyForm
         '
         Me.colLegacyForm.FieldName = "LegacyForm"
+        Me.colLegacyForm.MinWidth = 40
         Me.colLegacyForm.Name = "colLegacyForm"
         Me.colLegacyForm.Visible = True
         Me.colLegacyForm.VisibleIndex = 14
-        Me.colLegacyForm.Width = 53
+        Me.colLegacyForm.Width = 106
         '
         'colNewForm
         '
         Me.colNewForm.FieldName = "NewForm"
+        Me.colNewForm.MinWidth = 40
         Me.colNewForm.Name = "colNewForm"
         Me.colNewForm.Visible = True
         Me.colNewForm.VisibleIndex = 15
-        Me.colNewForm.Width = 60
+        Me.colNewForm.Width = 120
         '
         'colMDL
         '
         Me.colMDL.FieldName = "MDL"
+        Me.colMDL.MinWidth = 40
         Me.colMDL.Name = "colMDL"
         Me.colMDL.Visible = True
         Me.colMDL.VisibleIndex = 16
-        Me.colMDL.Width = 31
+        Me.colMDL.Width = 62
         '
         'colMDLUnlock
         '
         Me.colMDLUnlock.FieldName = "MDLUnlock"
+        Me.colMDLUnlock.MinWidth = 40
         Me.colMDLUnlock.Name = "colMDLUnlock"
         Me.colMDLUnlock.Visible = True
         Me.colMDLUnlock.VisibleIndex = 17
-        Me.colMDLUnlock.Width = 62
+        Me.colMDLUnlock.Width = 124
         '
         'colNewRecord
         '
         Me.colNewRecord.FieldName = "NewRecord"
+        Me.colNewRecord.MinWidth = 40
         Me.colNewRecord.Name = "colNewRecord"
         Me.colNewRecord.Visible = True
         Me.colNewRecord.VisibleIndex = 11
-        Me.colNewRecord.Width = 60
+        Me.colNewRecord.Width = 120
         '
         'colLeadEngineer
         '
         Me.colLeadEngineer.FieldName = "LeadEngineer"
+        Me.colLeadEngineer.MinWidth = 40
         Me.colLeadEngineer.Name = "colLeadEngineer"
         Me.colLeadEngineer.Visible = True
         Me.colLeadEngineer.VisibleIndex = 8
-        Me.colLeadEngineer.Width = 62
+        Me.colLeadEngineer.Width = 124
         '
         'GridColumn1
         '
         Me.GridColumn1.FieldName = "Drafter"
+        Me.GridColumn1.MinWidth = 40
         Me.GridColumn1.Name = "GridColumn1"
         Me.GridColumn1.Visible = True
         Me.GridColumn1.VisibleIndex = 5
-        Me.GridColumn1.Width = 56
+        Me.GridColumn1.Width = 112
         '
         'colLiaisonEngineer
         '
         Me.colLiaisonEngineer.FieldName = "LiaisonEngineer"
+        Me.colLiaisonEngineer.MinWidth = 40
         Me.colLiaisonEngineer.Name = "colLiaisonEngineer"
         Me.colLiaisonEngineer.Visible = True
         Me.colLiaisonEngineer.VisibleIndex = 6
-        Me.colLiaisonEngineer.Width = 70
+        Me.colLiaisonEngineer.Width = 140
         '
         'colOperations
         '
         Me.colOperations.FieldName = "Operations"
+        Me.colOperations.MinWidth = 40
         Me.colOperations.Name = "colOperations"
         Me.colOperations.Visible = True
         Me.colOperations.VisibleIndex = 7
-        Me.colOperations.Width = 57
+        Me.colOperations.Width = 114
         '
         'GridColumn2
         '
         Me.GridColumn2.FieldName = "GridEdit"
+        Me.GridColumn2.MinWidth = 40
         Me.GridColumn2.Name = "GridColumn2"
         Me.GridColumn2.Visible = True
         Me.GridColumn2.VisibleIndex = 18
-        Me.GridColumn2.Width = 51
+        Me.GridColumn2.Width = 102
         '
         'GridColumn3
         '
         Me.GridColumn3.FieldName = "Engineer"
+        Me.GridColumn3.MinWidth = 40
         Me.GridColumn3.Name = "GridColumn3"
         Me.GridColumn3.Visible = True
         Me.GridColumn3.VisibleIndex = 21
-        Me.GridColumn3.Width = 41
+        Me.GridColumn3.Width = 82
         '
         'GridColumn4
         '
         Me.GridColumn4.FieldName = "SrEngineer"
+        Me.GridColumn4.MinWidth = 40
         Me.GridColumn4.Name = "GridColumn4"
         Me.GridColumn4.Visible = True
         Me.GridColumn4.VisibleIndex = 22
-        Me.GridColumn4.Width = 49
+        Me.GridColumn4.Width = 98
         '
         'GridColumn5
         '
         Me.GridColumn5.FieldName = "Releaser"
+        Me.GridColumn5.MinWidth = 40
         Me.GridColumn5.Name = "GridColumn5"
         Me.GridColumn5.Visible = True
         Me.GridColumn5.VisibleIndex = 9
-        Me.GridColumn5.Width = 53
+        Me.GridColumn5.Width = 106
         '
         'GridColumn6
         '
         Me.GridColumn6.FieldName = "Flammability"
+        Me.GridColumn6.MinWidth = 40
         Me.GridColumn6.Name = "GridColumn6"
         Me.GridColumn6.Visible = True
         Me.GridColumn6.VisibleIndex = 23
-        Me.GridColumn6.Width = 49
+        Me.GridColumn6.Width = 98
         '
         'GridColumn7
         '
         Me.GridColumn7.FieldName = "Stress"
+        Me.GridColumn7.MinWidth = 40
         Me.GridColumn7.Name = "GridColumn7"
         Me.GridColumn7.Visible = True
         Me.GridColumn7.VisibleIndex = 24
-        Me.GridColumn7.Width = 46
+        Me.GridColumn7.Width = 92
         '
         'GridColumn8
         '
         Me.GridColumn8.FieldName = "Airworthiness"
+        Me.GridColumn8.MinWidth = 40
         Me.GridColumn8.Name = "GridColumn8"
         Me.GridColumn8.Visible = True
         Me.GridColumn8.VisibleIndex = 10
-        Me.GridColumn8.Width = 77
+        Me.GridColumn8.Width = 154
         '
         'GridColumn9
         '
         Me.GridColumn9.FieldName = "Active"
+        Me.GridColumn9.MinWidth = 40
         Me.GridColumn9.Name = "GridColumn9"
         Me.GridColumn9.Visible = True
         Me.GridColumn9.VisibleIndex = 25
-        Me.GridColumn9.Width = 41
+        Me.GridColumn9.Width = 82
         '
         'GridColumn10
         '
         Me.GridColumn10.FieldName = "Email"
+        Me.GridColumn10.MinWidth = 40
         Me.GridColumn10.Name = "GridColumn10"
         Me.GridColumn10.Visible = True
         Me.GridColumn10.VisibleIndex = 26
-        Me.GridColumn10.Width = 112
+        Me.GridColumn10.Width = 224
         '
         'GridColumn11
         '
         Me.GridColumn11.FieldName = "ChangeRedline"
+        Me.GridColumn11.MinWidth = 40
         Me.GridColumn11.Name = "GridColumn11"
         Me.GridColumn11.Visible = True
         Me.GridColumn11.VisibleIndex = 19
-        Me.GridColumn11.Width = 84
+        Me.GridColumn11.Width = 168
         '
         'GridColumn12
         '
         Me.GridColumn12.FieldName = "MoveGates"
+        Me.GridColumn12.MinWidth = 40
         Me.GridColumn12.Name = "GridColumn12"
         Me.GridColumn12.Visible = True
         Me.GridColumn12.VisibleIndex = 20
-        Me.GridColumn12.Width = 67
+        Me.GridColumn12.Width = 134
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(874, 14)
-        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnUpdate.Location = New System.Drawing.Point(1748, 27)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(100, 25)
+        Me.btnUpdate.Size = New System.Drawing.Size(200, 48)
         Me.btnUpdate.TabIndex = 1
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
         'btnRefresh
         '
-        Me.btnRefresh.Location = New System.Drawing.Point(764, 14)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnRefresh.Location = New System.Drawing.Point(1528, 27)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(100, 25)
+        Me.btnRefresh.Size = New System.Drawing.Size(200, 48)
         Me.btnRefresh.TabIndex = 2
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(339, 390)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(478, 176)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'AdminScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1575, 773)
+        Me.ClientSize = New System.Drawing.Size(2884, 1487)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.GridControl1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "AdminScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AdminScreen"
@@ -487,4 +541,5 @@ Partial Class AdminScreen
     Friend WithEvents GridColumn10 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn11 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents GridColumn12 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents Button1 As Button
 End Class
